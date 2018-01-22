@@ -1,8 +1,12 @@
-import ReactPlayer from 'react-player'
+import Card from '.Card.js'
+
+
 const TourItem=(props)=>(
     <div className="6u">
         <div className="video-responsive  ">
-            <ReactPlayer url="https://www.youtube.com/embed/-pyuT2oV24A?start=35"  />
+            <Card item={props.tour}/>
+            
+            
         </div>
     </div>
 

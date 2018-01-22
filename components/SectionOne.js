@@ -4,8 +4,11 @@ export default ()=>(
           <div className="container">
             <h2>Habitaciones &amp; Ofertas Especiales</h2>
             <p>Podrás Obtener Increibles Descuentos Si Reservas Hospedaje + Tour Desde Nuestra Pagina Web.</p>
+                    <img className="left" width="200" heigth="50" src="http://www.hostelriodanta.com/wp-content/uploads/2016/10/logo_riodanta-2.jpg"/>
+
           </div>
         </header>
+
         <div className="content dark style1 featured">
           <div className="container">
             <div className="row">

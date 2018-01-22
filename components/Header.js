@@ -9,7 +9,7 @@ export default ()=>{
                 <p>Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible</p>
             </header>
             <footer>
-                <a href="#first" className="button scrolly">Habitaciones</a>
+                <a href="#first" className="button scrolly"></a>
             </footer>
         </section>
 
