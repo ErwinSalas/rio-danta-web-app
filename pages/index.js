@@ -2,6 +2,8 @@
 import Header from '../components/Header.js'
 import SectionOne from '../components/SectionOne.js'
 import MainCss from '../components/styles-jsx/main_css.js'
+import SectionTours from '../components/SectionTours.js'
+
 
 export default ()=> (
         <div>
@@ -10,116 +12,7 @@ export default ()=> (
         <MainCss/>
         <Header/>
         <SectionOne/>
-    
-        <section id="second" className="main">
-          <header>
-            <div className="container">
-              <h2>Promociones y Tours</h2>
-              <p>Si deseas hacer las mejores actividades que brinda la Fortuna de San Carlos, ingresa para ver videos de las diferentes actividades, si deseas recibir los mejores precios solo debes escribirnos en breve te brindaremos la informacion que deseas.</p>
-            </div>
-          </header>
-          <div className="content dark style2">
-            <div className="container">
-              <div className="row">
-                {/*	<div class="u4 u12-narrow">
-								<section>
-									<h3>Promociones y Tours</h3>
-									<p>Si deseas conocer de las mejores actividades que se pueden realizar en la Fortuna de San Carlos, 
-											te ayudaremos a encontrar los mejores tours al precio más accesible, tenemos diferentes tours de adrenalina o relajantes 
-											o si deseas conocer de la flora y fauna, tenemos las mejores actividades para que disfrutes de sus vacaciones, 
-											Le brindaremos los mejores servicios. Venga y disfrute de su estancia en el confort de la ciudad, 
-											o si prefiere la paz y la tranquilidad le ofrecemos nuestro hospedaje en el Hostel Rio Danta al mejor precio y con las mejores actividades.</p>
-									*/}
-                <header>
-                  <h3>Tours</h3>
-                </header>
-                <div className="table-wrapper">
-                  <table className="default">
-                    <thead>
-                      <tr>
-                        <th>ID</th>
-                        <th>Tour</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><video src="assets/gif/fly_board.mp4" height={100} width={100} autoPlay controls /></td>
-                        <td>Fly Board</td>
-                        <td>Entrada a Baldi + Almuerzo + Cena tipo Buffet</td>
-                        <td>$90</td>
-                      </tr>
-                      <tr>
-                        <td><video src="assets/gif/canopy_Sky.mp4" height={100} width={100} autoPlay controls /></td>
-                        <td>Tabacon + Alimentacion</td>
-                        <td>Entrada a Tabacon + Almuerzo + Cena tipo Buffet</td>
-                        <td>$55</td>
-                      </tr>
-                      <tr>
-                        <td><span className="icon fa"><img src="static/images/kalambu.jpg" height={100} width={100} /></span></td>
-                        <td>Baldi + Alimentacion</td>
-                        <td>Entrada a Baldi + Almuerzo + Cena tipo Buffet</td>
-                        <td>$55</td>
-                      </tr>
-                      <tr>
-                        <td><span className="icon fa"><img src="static/images/ecotermales.jpg" height={100} width={100} /></span></td>
-                        <td>Baldi + Alimentacion</td>
-                        <td>Entrada a Baldi + Almuerzo + Cena tipo Buffet</td>
-                        <td>$55</td>
-                      </tr>
-                      <tr>
-                        <td><span className="icon fa"><img src="static/images/atv.jpg" height={100} width={100} /></span></td>
-                        <td>Baldi + Alimentacion</td>
-                        <td>Entrada a Baldi + Almuerzo + Cena tipo Buffet</td>
-                        <td>$55</td>
-                      </tr>
-                      <tr>
-                        <td><span className="icon fa"><img src="static/images/rafting.jpg" height={100} width={100} /></span></td>
-                        <td>Baldi + Alimentacion</td>
-                        <td>Entrada a Baldi + Almuerzo + Cena tipo Buffet</td>
-                        <td>$55</td>
-                      </tr>
-                      <tr>
-                        <td><span className="icon fa"><img src="static/images/canopy.jpg" height={100} width={100} /></span></td>
-                        <td>Baldi + Alimentacion</td>
-                        <td>Entrada a Baldi + Almuerzo + Cena tipo Buffet</td>
-                        <td>$55</td>
-                      </tr>
-                    </tbody>
-                    <tfoot>
-                      <tr>
-                        <td colSpan={3} />
-                        <td>100.00</td>
-                      </tr>
-                    </tfoot>
-                  </table>
-                </div>
-                <section>
-                  <footer>
-                    <a href="#third" className="button scrolly">Reservaciones</a>
-                  </footer>
-                  <div className="u12 u12-narrow">
-                    <div className="row">
-                      <video src="assets/gif/fly_board.mp4" height={150} width={150} autoPlay controls />
-                      <div className="u6"><a href="#" className="image"><img src="static/images/atv.jpg" className="tour" height={150} width={150} /></a></div>
-                      <div className="u6"><a href="#" className="image"><img src="static/images/baldi.jpg" className="tour" height={150} width={150} /></a></div>
-                      <div className="u6"><a href="#" className="image"><img src="static/images/estandar.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image"><img src="static/images/celeste.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image"><img src="static/images/ecotermales.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/tucan.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/rafting.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/tabacon.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/atv.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/tucan.jpg" className="tour" height={200} width={200} /></a></div>
-                      <div className="u6"><a href="#" className="image fit"><img src="static/images/canopy.jpg" className="tour" height={200} width={200} /></a></div>
-                    </div>
-                  </div>
-                </section></div>
-            </div>
-          </div>
-        </section>
+        <SectionTours/>
         {/* Third */}
         <section id="third" className="main">
           <header>

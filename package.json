@@ -2,13 +2,16 @@
   "name": "webappriodanta",
   "version": "1.0.0",
   "description": "",
-  "main": "MainPage.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "author": "Erwin & Randall",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "material-react": "0.0.84",
     "next": "^4.2.3",
     "react": "^16.2.0",

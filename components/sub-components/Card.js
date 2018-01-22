@@ -1,7 +1,8 @@
 import ReactPlayer from 'react-player'
-
+import ItemStyle from '../styles-jsx/touch_item_css.js'
 const Card = (props)=> (
-
+    <div>
+        <ItemStyle/>
       <div className="card">
         <div className="card-image">
           <ReactPlayer url={props.item.url}  />
@@ -14,4 +15,7 @@ const Card = (props)=> (
           <a href="#">This is a link</a>
         </div>
       </div>
+    </div>
+
 )
+export default Card

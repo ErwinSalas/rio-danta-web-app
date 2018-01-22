@@ -1,5 +1,5 @@
 
-export default ()=>(
+const ItemStyle= ()=>(
     <style jsx>{`
 .card-panel {
   -webkit-transition: -webkit-box-shadow .25s;
@@ -216,3 +216,4 @@ export default ()=>(
 
     `}</style>
 )
+export default ItemStyle;
