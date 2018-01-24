@@ -1,6 +1,21 @@
 
-const ItemStyle= ()=>(
+const ItemStyle = ()=>(
     <style jsx>{`
+.black {
+background-color: #000000 !important;
+}
+
+.black-text {
+  color: #000000 !important;
+}
+
+.white {
+  background-color: #FFFFFF !important;
+}
+
+.white-text {
+  color: #FFFFFF !important;
+}
 .card-panel {
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
