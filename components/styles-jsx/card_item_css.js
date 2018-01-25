@@ -1,11 +1,13 @@
 
 const ItemStyle = ()=>(
     <style jsx>{`
+
 .black {
 background-color: #000000 !important;
 }
 
 .black-text {
+  
   color: #000000 !important;
 }
 
@@ -30,7 +32,9 @@ background-color: #000000 !important;
 .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.15);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+  color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
@@ -174,7 +178,11 @@ background-color: #000000 !important;
 }
 
 .card .card-content p {
-  margin: 0;
+  font-family: "times new roman";
+  text-align:center;
+  font-size:1em;
+  display: block;
+  -webkit-font-smoothing: antialiased;
   color: inherit;
 }
 
@@ -192,7 +200,7 @@ background-color: #000000 !important;
   position: relative;
   background-color: inherit;
   border-top: 1px solid rgba(160, 160, 160, 0.2);
-  padding: 16px 24px;
+  padding: 6px 14px;
 }
 
 .card .card-action:last-child {

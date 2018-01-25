@@ -1,14 +1,13 @@
-import ItemStyle from '../styles-jsx/card_item_css.js'
+
 const Card = (props)=> (
     <div>
-        <ItemStyle/>
-      <div className="card small">
+      <div className="card medium">
         <div className="card-image">
           <img src={props.item.url}/>
           <span className="card-title">{props.item.title}</span>
         </div>
         <div className="card-content">
-          <p>{props.item.content}</p>
+          <p className="paragraph">{props.item.description}</p>
         </div>
         <div className="card-action">
           <a href="#">Ver Mas</a>

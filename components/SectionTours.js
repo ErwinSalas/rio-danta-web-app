@@ -1,31 +1,41 @@
 
 //import ToursData from '../data/ToursData.js'
+import ItemStyle from './styles-jsx/card_item_css.js'
 import TourItem from './sub-components/TourItem.js'
 const ToursData=[
     {
-        "title":"Sky Adventures",
-        "url": "static/image/gif/canopy_Sky.mp4"
+        "title":"Baldi hot springs",
+        "url": "static/images/baldi.jpg",
+        "description": "simply dummy text of the printing and typesetting industry.since the 1500s, when an unknown printer "
     },
     {
-        "title":"Flyboard Arenal Lake",
-        "url": "static/images/gif/fly_board.mp4"
+        "title":"ATV arenal tour",
+        "url": "static/images/atv.jpg",
+        "description": "s simply dummy text of the printing and typesetting industry since the 1500s, when an unknown printer"
     },
     {
-        "title":"Sky Adventures",
-        "url": "static/image/gif/canopy_Sky.mp4"
+        "title":"Canopy tour",
+        "url": "static/images/canopy.jpg",
+        "description": "s simply dummy text of the printing and typesetting industry since the 1500s, when an unknown printer"
     },
     {
-        "title":"Sky Adventures",
-        "url": "static/image/gif/canopy_Sky.mp4"
+        "title":"Rio Celeste tour",
+        "url": "static/images/celeste.jpg",
+        "description": "s simply dummy text of the printing and typesetting industry since the 1500s, when an unknown printer"
     },
     {
-        "title":"Sky Adventures",
-        "url": "static/image/gif/canopy_Sky.mp4"
+        "title":"Kalambu hot springs",
+        "url": "static/images/kalambu.jpg",
+        "description": "s simply dummy text of the printing and typesetting industry since the 1500s, when an unknown printer"
+
     }
 ]
 
 const ToursInfo = ()=>(
+
   <section id="second" className="main">
+  <ItemStyle/>
+  
     <header>
       <div className="container">
         <h2>Promociones y Tours</h2>
@@ -34,7 +44,7 @@ const ToursInfo = ()=>(
     </header>
     <div className="content dark style2">
       <div className="container">
-        <div className="12u 12u(narrow)">
+        <div className="u12 u12-narrow">
         <div className="row">
           {
             ToursData.map(tour =>{
