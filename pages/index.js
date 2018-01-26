@@ -3,14 +3,25 @@ import Header from '../components/Header.js'
 import SectionOne from '../components/SectionOne.js'
 import MainCss from '../components/styles-jsx/main_css.js'
 import SectionTours from '../components/SectionTours.js'
+import Head from 'next/head'
 
-
-export default ()=> (
+export default () => (
   <div>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Head>
+      <title>Hostel Rio Danta App</title>
+      <meta charSet='utf-8' />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="Aplicacion para reserva de habitaciones y tours en linea" />
+     
+    </Head>
+    
     
     <MainCss/>
-    <Header/>
+    <Header 
+      title="Welcome to Rio Danta Hostel"
+      subtitle="Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible"
+    
+    />
     <SectionOne/>
     <SectionTours/>
     {/* Third */}

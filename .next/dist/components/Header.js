@@ -16,7 +16,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = "C:\\Users\\Pavilion\\Documents\\Proyectos\\WebAppRioDanta\\components\\Header.js";
 
-exports.default = function () {
+exports.default = function (props) {
     return _react2.default.createElement("div", {
         __source: {
             fileName: _jsxFileName,
@@ -41,12 +41,12 @@ exports.default = function () {
             fileName: _jsxFileName,
             lineNumber: 8
         }
-    }, "Welcome to Rio Danta "), _react2.default.createElement("p", {
+    }, props.title), _react2.default.createElement("p", {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 9
         }
-    }, "Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible")), _react2.default.createElement("footer", {
+    }, props.subtitle)), _react2.default.createElement("footer", {
         __source: {
             fileName: _jsxFileName,
             lineNumber: 11
@@ -57,4 +57,4 @@ exports.default = function () {
         }
     }))));
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6WyJIZWFkZXJDc3MiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQWUsQUFDdEI7Ozs7Ozs7O2tCQUFlLFlBQUksQUFDZjsyQkFDSSxjQUFBOztzQkFBQTt3QkFBQSxBQUNBO0FBREE7QUFBQSxLQUFBLGtCQUNBLEFBQUM7O3NCQUFEO3dCQURBLEFBQ0EsQUFDQTtBQURBO0FBQUEsd0JBQ0EsY0FBQSxhQUFTLElBQVQsQUFBWSxVQUFTLFdBQXJCLEFBQStCO3NCQUEvQjt3QkFBQSxBQUNJO0FBREo7dUJBQ0ksY0FBQTs7c0JBQUE7d0JBQUEsQUFDSTtBQURKO0FBQUEsdUJBQ0ksY0FBQTs7c0JBQUE7d0JBQUE7QUFBQTtBQUFBLE9BREosQUFDSSxBQUNBLDBDQUFBLGNBQUE7O3NCQUFBO3dCQUFBO0FBQUE7QUFBQSxPQUhSLEFBQ0ksQUFFSSxBQUVKLCtFQUFBLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0k7QUFESjtBQUFBLDRDQUNPLE1BQUgsQUFBUSxVQUFTLFdBQWpCLEFBQTJCO3NCQUEzQjt3QkFUWixBQUNJLEFBRUEsQUFLSSxBQUNJLEFBTWY7QUFOZTs7QUFWaEIiLCJmaWxlIjoiSGVhZGVyLmpzIiwic291cmNlUm9vdCI6IkM6L1VzZXJzL1BhdmlsaW9uL0RvY3VtZW50cy9Qcm95ZWN0b3MvV2ViQXBwUmlvRGFudGEifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6WyJIZWFkZXJDc3MiLCJwcm9wcyIsInRpdGxlIiwic3VidGl0bGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQWUsQUFDdEI7Ozs7Ozs7O2tCQUFlLFVBQUEsQUFBQyxPQUFRLEFBQ3BCOzJCQUNJLGNBQUE7O3NCQUFBO3dCQUFBLEFBQ0E7QUFEQTtBQUFBLEtBQUEsa0JBQ0EsQUFBQzs7c0JBQUQ7d0JBREEsQUFDQSxBQUNBO0FBREE7QUFBQSx3QkFDQSxjQUFBLGFBQVMsSUFBVCxBQUFZLFVBQVMsV0FBckIsQUFBK0I7c0JBQS9CO3dCQUFBLEFBQ0k7QUFESjt1QkFDSSxjQUFBOztzQkFBQTt3QkFBQSxBQUNJO0FBREo7QUFBQSx1QkFDSSxjQUFBOztzQkFBQTt3QkFBQSxBQUFLO0FBQUw7QUFBQSxhQURKLEFBQ0ksQUFBVyxBQUNYLHdCQUFBLGNBQUE7O3NCQUFBO3dCQUFBLEFBQUk7QUFBSjtBQUFBLGFBSFIsQUFDSSxBQUVJLEFBQVUsQUFFZCw0QkFBQSxjQUFBOztzQkFBQTt3QkFBQSxBQUNJO0FBREo7QUFBQSw0Q0FDTyxNQUFILEFBQVEsVUFBUyxXQUFqQixBQUEyQjtzQkFBM0I7d0JBVFosQUFDSSxBQUVBLEFBS0ksQUFDSSxBQU1mO0FBTmU7O0FBVmhCIiwiZmlsZSI6IkhlYWRlci5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy9QYXZpbGlvbi9Eb2N1bWVudHMvUHJveWVjdG9zL1dlYkFwcFJpb0RhbnRhIn0=

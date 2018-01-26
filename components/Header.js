@@ -1,12 +1,12 @@
 import HeaderCss from './styles-jsx/header_css.js';
-export default ()=>{
+export default (props)=>{
     return(
         <div>
         <HeaderCss/>
         <section id="header" className="dark">
             <header>
-                <h1>Welcome to Rio Danta </h1>
-                <p>Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible</p>
+                <h1>{props.title}</h1>
+                <p>{props.subtitle}</p>
             </header>
             <footer>
                 <a href="#first" className="button scrolly"></a>
