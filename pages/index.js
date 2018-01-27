@@ -5,8 +5,9 @@ import MainCss from '../components/styles-jsx/main_css.js'
 import SectionTours from '../components/SectionTours.js'
 import Head from 'next/head'
 
+  
 export default () => (
-  <div>
+  <div >
     <Head>
       <title>Hostel Rio Danta App</title>
       <meta charSet='utf-8' />
@@ -17,6 +18,7 @@ export default () => (
     
     
     <MainCss/>
+    
     <Header 
       title="Welcome to Rio Danta Hostel"
       subtitle="Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible"

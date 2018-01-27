@@ -3,6 +3,8 @@
 import ItemStyle from './styles-jsx/card_item_css.js';
 import TourItem from './sub-components/TourItem.js';
 import  Link  from 'next/link';
+import Nav from '../components/Nav.js'
+
 
 const ToursData = [
   {
@@ -36,6 +38,7 @@ const ToursData = [
 const ToursInfo = () => (
 
   <section id="second" className="main">
+  <Nav/>
     <ItemStyle />
 
     <header>

@@ -8,11 +8,13 @@ export default ()=> (
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
     <MainCss/>
+    
     <Header 
       title="Catalogo de toures"
       subtitle="Aprovecha al maximo tu estadia en La Fortuna"
     
     />
+    
     <SectionTours/>
     {/* Third */}
 

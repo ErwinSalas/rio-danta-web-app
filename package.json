@@ -15,8 +15,10 @@
     "material-react": "0.0.84",
     "next": "^4.2.3",
     "react": "^16.2.0",
+    "react-burger-menu": "^2.2.3",
     "react-dom": "^16.2.0",
     "react-material-navigation": "^0.2.1",
+    "react-nav-bar": "^0.6.5",
     "react-player": "^1.1.1"
   }
 }
