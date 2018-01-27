@@ -1,13 +1,13 @@
-
+import CardImg from './CardImg.js' 
 const Card = (props)=> (
     <div>
-      <div className="card medium">
-        <div className="card-image">
-          <img src={props.item.url}/>
-          <span className="card-title">{props.item.title}</span>
-        </div>
+      <div className="card medium z-depth-5 " >
+        <CardImg
+          title={props.item.title}
+          url={props.item.url}
+        />
         <div className="card-content">
-          <p className="paragraph">{props.item.description}</p>
+          <p className="black-text">{props.item.description}</p>
         </div>
         <div className="card-action">
           <a href="#">Ver Mas</a>

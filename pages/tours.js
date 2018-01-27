@@ -1,6 +1,6 @@
 import Header from '../components/Header.js'
 import MainCss from '../components/styles-jsx/main_css.js'
-import SectionTours from '../components/SectionTours.js'
+import Catalog from '../components/SectionCatalog.js'
 
 
 export default ()=> (
@@ -14,9 +14,10 @@ export default ()=> (
       subtitle="Aprovecha al maximo tu estadia en La Fortuna"
     
     />
-    
-    <SectionTours/>
+  
+    <Catalog/>
     {/* Third */}
+    
 
     
     {/* Fourth */}

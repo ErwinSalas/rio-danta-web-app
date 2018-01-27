@@ -1,10 +1,6 @@
-
-//import ToursData from '../data/ToursData.js'
 import ItemStyle from './styles-jsx/card_item_css.js';
 import TourItem from './sub-components/TourItem.js';
-import CardImg from './sub-components/CardImg.js'
-
-import Link from 'next/link';
+import  Link  from 'next/link';
 import Nav from '../components/Nav.js'
 
 
@@ -37,45 +33,31 @@ const ToursData = [
   }
 ]
 
-const ToursInfo = () => (
+const Catalog = () => (
 
-  <section id="second" className="main">
+  <section id="first" className="main">
+  <Nav/>
     <ItemStyle />
-
-    <header>
-      <div className="container">
-        <h2>Promocione Tours</h2>
-        <p>Si deseaacer laejorectividadeue brinda la Fortuna de San Carlos, ingresa para ver videoe laiferentectividades, si deseaecibir loejorerecioolo debescribirnon breve te brindaremoa informacion que deseas.</p>
-      </div>
-    </header>
-    <div className="content dark style2">
+    <div className="content">
       <div className="container">
         <div className="u12 u12-narrow">
           <div className="row">
             {
               ToursData.map(tour => {
                 return (
-                  <div className="u4 u12-mobile">
-                    <div className="video-responsive  ">
-                      <div className="card small">
-                        <CardImg url={tour.url} title={tour.title} />
-                        <div className="card-action">
-                          <a href="#">Ver Mas</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <TourItem tour={tour} />
                 )
               })
             }
-
             
+            <Link href="/tours">
+            <a>Ver Catalogo</a>
+          </Link>
           </div>
-        
         </div>
       </div>
     </div>
   </section>
 
 )
-export default ToursInfo
+export default Catalog

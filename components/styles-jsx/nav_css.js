@@ -39,12 +39,14 @@ const NavCss = () => (
     line-height: 22px;
     margin-bottom:5px;
 }
+button{
 
+}
     .search input {
         position: absolute;
         width:0px;
         background-color :#343a40;
-        margin-left: 75px;
+        margin-left: 72px;
         -webkit-transition: all 0.7s ease-in-out;
         -moz-transition: all 0.7s ease-in-out;
         -o-transition: all 0.7s ease-in-out;

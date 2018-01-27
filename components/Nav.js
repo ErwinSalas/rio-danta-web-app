@@ -13,7 +13,6 @@ const Nav = () => (
                 </div>
             </div>
         </div>
-        <button className="nav-item">Categorias</button>
     </nav>
     </div>
 )
