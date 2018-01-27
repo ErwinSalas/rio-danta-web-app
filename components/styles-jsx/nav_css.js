@@ -3,7 +3,12 @@ const NavCss = () => (
     .pull-right{
         float:right;
       }
-
+      .bg-dark {
+        background-color: #343a40 !important;
+      }
+      .bg-white {
+        background-color: #fff !important;
+      }
     }
     .row-nav {
         display: -webkit-box;
@@ -26,43 +31,59 @@ const NavCss = () => (
 .search {
     padding-top: 5px;
     padding-bottom: 5px;
-
     width: 230px;
     height: 30px;
     position: relative;
     left: 10px;
     float: right;
     line-height: 22px;
+    margin-bottom:5px;
 }
 
     .search input {
         position: absolute;
-        margin-left: 50px;
+        width:0px;
+        background-color :#343a40;
+        margin-left: 75px;
         -webkit-transition: all 0.7s ease-in-out;
         -moz-transition: all 0.7s ease-in-out;
         -o-transition: all 0.7s ease-in-out;
         transition: all 0.7s ease-in-out;
-        height: 30px;
-        line-height: 18px;
-        padding: 0 2px 0 2px;
-        border-radius:1px;
+        height: 22px;
+        bottom:2px;
+        padding: 0 2px 0 4px;
+
     }
 
         .search:hover input, .search input:focus {
-            width: 200px;
+            width: 300px;
+            background-color :white;
             margin-right: 0px;
+            line-height: 18px;
+            border-radius:1px;
         }
 
 .btn-search {
-    background:url('static/images/search.svg') center center no-repeat;
-    height: 30px;
+    background:url('static/images/search-ico.png') center center no-repeat;
+    background-color :#343a40;
+    max-height:25px;
     position: absolute;
     left: 0;
-    top: 5px;
-    border-radius:1px;
+    bottom: 1.5px;
+    border-color:black;
 }
+.nav-item{
+  max-height:25px;
+  bottom: 1.5px;
+  background:transparent;
+  position: relative;
+  float:right;
+}
+  
   .btn-search:hover{
-     background:url('static/images/search.svg') center center no-repeat;
+     background:url('static/images/search-ico.png') center center no-repeat;
+     background-color:#27659d;
+
   }
 
 .navbar {

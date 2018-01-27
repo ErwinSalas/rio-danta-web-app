@@ -6,13 +6,14 @@ const Nav = () => (
     <nav className="navbar navbar-dark bg-dark">
         <div className="pull-right">
             <div className="row-nav">
-                <div className="u12">
-                    <div className=" search">
+                <div className=" search">
                     <input type="text" className="form-control input-sm" maxlength="64" placeholder="Search" />
-                    <button type="submit" className="btn-search"></button>
-                </div></div>
+                    <button type="submit" className="btn-search "><img src="static/images/search.svg"/></button>
+                    
+                </div>
             </div>
         </div>
+        <button className="nav-item">Categorias</button>
     </nav>
     </div>
 )
