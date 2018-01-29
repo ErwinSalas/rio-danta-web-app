@@ -200,16 +200,23 @@ export default () => (
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color:  #145995;
   border-radius: 50%;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
   vertical-align: middle;
 }
-
+.color-prymary{
+	background-color:#d2da2e;
+}
+.color-accent{
+	background-color:  #145995;
+}
+.color-danton{
+	background-color:#382b33;
+}
 .btn-floating:hover {
-  background-color:#d2da2e;
+  background-color:#145995;
 }
 
 .btn-floating:before {

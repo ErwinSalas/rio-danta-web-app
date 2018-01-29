@@ -203,7 +203,7 @@ background-color: #000000 !important;
 .p-absolute{
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
 
 }
 

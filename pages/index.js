@@ -9,7 +9,7 @@ import Footer from "../components/sub-components/Footer.js"
 export default () => (
   <div >
     <Head>
-      <title>Hostel Rio Danta App</title>
+      <title>Rio danta | Hostel rio danta app</title>
       <meta charSet='utf-8' />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Aplicacion para reserva de habitaciones y tours en linea" />
@@ -23,6 +23,7 @@ export default () => (
       title="Hostel Río Danta "
       subtitle="Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible"
       btntitle="Habitaciones"
+      classRef="#header"
     
     />
     <SectionOne/>

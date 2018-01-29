@@ -7,7 +7,7 @@ export default ()=> (
   <div>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   <div class="fixed-action-btn horizontal">
-    <a class="btn-floating btn-large dark">
+    <a class="btn-floating btn-large color-danton">
       <i class="large material-icons">home</i>
     </a>
     <ul>
