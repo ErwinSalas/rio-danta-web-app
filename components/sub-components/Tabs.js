@@ -18,19 +18,19 @@ class Tabs extends Component {
 
         return (
             <div>
-                <TabCss/>
-                <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+                <TabCss />
                 <nav className="nav-extended">
                     <div className="nav-content">
                         <ul className="tabs ">
-                            <li className="tab "><img className="brand-logo" width="80" heigth="22" src="http://www.hostelriodanta.com/wp-content/uploads/2016/10/logo_riodanta-2.jpg"/></li>
-                            <li className="tab"><a  href="">Termales</a></li>
+                            <li className="tab"><a href="">Termales</a></li>
                             <li className="tab "><a href="">Rafting</a></li>
                             <li className="tab"><a href="">Aventura</a></li>
+                            <li className="tab"><a href="">Paquetes</a></li>
+
                         </ul>
                     </div>
                 </nav>
-                
+
             </div>
 
         );

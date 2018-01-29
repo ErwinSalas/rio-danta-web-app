@@ -1,10 +1,14 @@
 import CardImg from './CardImg.js'
 const Card = (props) => (
   <div>
-    <div className="card medium z-depth-5 " >
+  
+        
+    <div className="card small z-depth-5 " >
+    
       <CardImg
         title={props.item.title}
         url={props.item.url}
+        price={props.item.adult}
       />
       <div className="card-content ">
         <div className="container"></div>
@@ -29,12 +33,7 @@ const Card = (props) => (
 
           </div>
           </div>
-        <div className="card-action">
-          <a >Precio $ {
-            props.item.adult
-          }
-          </a>
-        </div>
+        
       </div>
     </div>
   </div>

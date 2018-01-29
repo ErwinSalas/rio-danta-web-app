@@ -26,6 +26,17 @@ export default ()=>(
                 text-align: center;
                 color: rgb(255, 255, 255);
             }
+            #header-tours {
+                position: relative;
+                margin: 0;
+                background-image: linear-gradient(to top, rgba(63, 46, 65, 0.8),  rgba(65, 55, 46, 0.8)), url("static/images/bg-tours.jpg");
+                background-size:  cover;
+                background-position:  center center;
+                background-repeat:  no-repeat;
+                padding: 14em 0 14em 0;
+                text-align: center;
+                color: rgb(255, 255, 255);
+            }
 
                 #header header h1 {
                     font-size: 2.25em;

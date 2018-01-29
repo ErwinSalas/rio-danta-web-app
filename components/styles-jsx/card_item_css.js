@@ -11,6 +11,9 @@ background-color: #000000 !important;
 .no-pad-top{
   padding-top:20px;
 }
+.pad-5{
+  padding:3px;
+}
 .no-pad-top-list{
   padding-top:5px;
 }
@@ -25,21 +28,21 @@ background-color: #000000 !important;
     text-align: -webkit-wrap-content;
 }
 .li-item-left{
-    isplay: list-item;
+    display: list-item;
     max-height:20px;
     text-align: -webkit-wrap-content;
     text-align:left;
 }
   
 .black-text-content {
-  font-size:0.60em;
+  font-size:0.7em;
   padding:0;
   margin-top:2px;
   margin-bottom:2px;
   color: #000000 !important;
 }
 .black-text-content-title {
-  font-size:0.70em;
+  font-size:0.8em;
   color:#89adca;
   padding:0;
   margin-top:2px;
@@ -197,6 +200,12 @@ background-color: #000000 !important;
   bottom: 0;
   width: 100%;
 }
+.p-absolute{
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
 
 .card .card-image .card-title {
   color: #fff;
@@ -315,6 +324,12 @@ background-color: #000000 !important;
               .no-pad-top-list{
                 padding-top:0px;
               }
+              .pad-5{
+                padding:1px;
+                font-size:20px;
+              }
+  padding:3px;
+}
           }
          
     `}</style>

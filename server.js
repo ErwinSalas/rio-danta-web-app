@@ -14,8 +14,15 @@ app.prepare()
     const queryParams = { title: req.params.id }
     app.render(req, res, actualPage, queryParams)
   })
-  server.get('/tours', (req, res) => {
-    return app.render(req, res, '/tours', req.query)
+  
+  server.get('/p/:id', (req, res) => {
+    return app.render(req, res, '/HabitacionesC', req.query)
+  })
+  server.get('/p/:id', (req, res) => {
+    return app.render(req, res, '/HabitacionesS', req.query)
+  })
+  server.get('/p/:id', (req, res) => {
+    return app.render(req, res, '/HabitacionesE', req.query)
   })
 
   server.get('*', (req, res) => {

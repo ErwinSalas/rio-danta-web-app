@@ -64,11 +64,7 @@ const ToursData = [
     "touristcomision": 34,
     "touristneto": 79
   },
-  {
-    "title": "Baldi hot springs ",
-    "url": "static/images/baldi.jpg",
-    "description": []
-  },
+
   {
     "adult": 85,
     "adultcomision": 20,
@@ -293,8 +289,9 @@ class Catalog extends Component {
 
     return (
 
-      <section id="first" className="main">
+      <section id="first" className="main ">
         <style jsx global>{`
+        
           nav.nav-extended .nav-wrapper {
             min-height: 56px;
             height: auto;
@@ -308,6 +305,7 @@ class Catalog extends Component {
             line-height: 64px;
           }
           }
+          
         `}</style>
         <nav class="nav-extended">
           <div class="nav-wrapper">
@@ -330,9 +328,7 @@ class Catalog extends Component {
 
                 }
 
-                <Link href="/tours">
-                  <a>Ver Catalogo</a>
-                </Link>
+               
               </div>
             </div>
           </div>

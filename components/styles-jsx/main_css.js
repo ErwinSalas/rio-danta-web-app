@@ -190,6 +190,104 @@ export default () => (
 		}
 
 	}
+.btn-floating {
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  background-color:  #145995;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.btn-floating:hover {
+  background-color:#d2da2e;
+}
+
+.btn-floating:before {
+  border-radius: 0;
+}
+.btn-floating.btn-large {
+  width: 56px;
+  height: 56px;
+}
+.fixed-action-btn {
+  position: fixed;
+  right: 23px;
+  bottom: 23px;
+  padding-top: 15px;
+  margin-bottom: 0;
+  z-index: 997;
+}
+.fixed-action-btn ul {
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  bottom: 64px;
+  margin: 0;
+  visibility: hidden;
+}
+
+.fixed-action-btn ul li {
+  margin-bottom: 15px;
+}
+
+.fixed-action-btn ul a.btn-floating {
+  opacity: 0;
+}
+
+.fixed-action-btn .fab-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 40px;
+  height: 40px;
+  background-color: #26a69a;
+  border-radius: 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.fixed-action-btn.horizontal {
+  padding: 0 0 0 15px;
+}
+
+.fixed-action-btn.horizontal ul {
+  text-align: right;
+  right: 64px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 100%;
+  left: auto;
+  width: 500px;
+  /*width 100% only goes to width of button container */
+}
+
+.fixed-action-btn.horizontal ul li {
+  display: inline-block;
+  margin: 15px 15px 0 0;
+}
+.material-icons {
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+i.large {
+	padding:3px;
+  font-size: 3rem;
+}
+
 
 /* Grid */
 
@@ -1430,7 +1528,10 @@ export default () => (
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-
+	
+.gray-back{
+		background-color:gray;
+		}
 	.dark blockquote {
 		border-left-color: rgba(255, 255, 255, 0.5);
 	}
@@ -1560,6 +1661,7 @@ export default () => (
 		ul.icons li {
 			display: inline-block;
 			padding-left: 0.75em;
+
 		}
 
 		ul.icons a {
