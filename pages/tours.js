@@ -5,50 +5,52 @@ import Footer from "../components/sub-components/Footer.js"
 import Link from 'next/link';
 
 
-export default ()=> (
+export default () => (
   <div>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-  <div class="fixed-action-btn horizontal">
-    <a class="btn-floating btn-large color-danton">
-      <i class="large material-icons">home</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <div class="fixed-action-btn horizontal">
+      <Link href="/">
+        <a class="btn-floating btn-large color-danton">
+          <i class="large material-icons">home</i>
+        </a>
+      </Link>
+      <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      </ul>
+    </div>
 
-  
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <MainCss/>
-    
-    <Header 
+
+    <MainCss />
+
+    <Header
       title="Catalogo de toures"
       subtitle="Aprovecha al maximo tu estadia en La Fortuna"
       btntitle="Start"
       classRef="#header-tours"
-    
+
     />
-              
 
 
-    <Catalog/>
+
+    <Catalog />
     {/* Third */}
 
 
-    
-     {/* Fourth */}
+
+    {/* Fourth */}
     <section id="fourth" className="main">
       <header>
         <div className="container">
           <h2>Contacto</h2>
-          <p>Escribenos para obtener los mejores precios y reservar los mejores tours<br/> 
-          Si lo haces desde nuestra pagina podras aprovechar los mejores descuentos<br/>
-          Cualquier consulta estamos para servirles.</p>
+          <p>Escribenos para obtener los mejores precios y reservar los mejores tours<br />
+            Si lo haces desde nuestra pagina podras aprovechar los mejores descuentos<br />
+            Cualquier consulta estamos para servirles.</p>
         </div>
       </header>
       <div className="content style4 featured">
@@ -74,9 +76,9 @@ export default ()=> (
       </div>
     </section>
     {/* Footer */}
-  
-    <Footer/>
+
+    <Footer />
     {/* Scripts */}
-</div>
-    
+  </div>
+
 )
