@@ -1,7 +1,9 @@
 import Header from '../components/Header.js'
 import MainCss from '../components/styles-jsx/main_css.js'
 import Catalog from '../components/SectionCatalog.js'
-import Footer from "../components/sub-components/Footer"
+import Footer from "../components/sub-components/Footer.js"
+import Link from 'next/link';
+
 
 export default ()=> (
   <div>
