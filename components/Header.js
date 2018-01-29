@@ -9,7 +9,7 @@ export default (props)=>{
                 <p>{props.subtitle}</p>
             </header>
             <footer>
-                <a href="#first" className="button scrolly"></a>
+                <a href="#first" className="button scrolly">{props.btntitle}</a>
             </footer>
         </section>
 

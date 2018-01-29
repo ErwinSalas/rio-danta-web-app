@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
+    "firebase": "^4.9.0",
     "material-react": "0.0.84",
     "next": "^4.2.3",
     "react": "^16.2.0",

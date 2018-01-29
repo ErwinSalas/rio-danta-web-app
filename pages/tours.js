@@ -12,12 +12,13 @@ export default ()=> (
     <Header 
       title="Catalogo de toures"
       subtitle="Aprovecha al maximo tu estadia en La Fortuna"
+      btntitle="Start"
     
     />
   
     <Catalog/>
     {/* Third */}
-    
+
 
     
     {/* Fourth */}

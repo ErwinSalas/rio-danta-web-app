@@ -10,7 +10,7 @@ import Nav from '../components/Nav.js'
 
 const ToursData = [
   {
-    "title": "Baldi hot springs",
+    "title": "Baldi hot springs ",
     "url": "static/images/baldi.jpg",
     "description": "simply dummy text of the printing and typesetting industry.since the 1500s, when an unknown printer "
   },
@@ -68,10 +68,18 @@ const ToursInfo = () => (
                 )
               })
             }
+            <div className="row">
+              <footer>
+                <Link href="/tours">
+                  <a href="#second" className="button scrolly">Nuestros Tours &amp; Descuentos</a>
+                </Link>
+              </footer>
 
-            
+            </div>
+
+
           </div>
-        
+
         </div>
       </div>
     </div>

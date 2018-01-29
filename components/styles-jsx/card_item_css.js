@@ -5,10 +5,45 @@ const ItemStyle = ()=>(
 .black {
 background-color: #000000 !important;
 }
+.no-pad-row{
+    padding-top:30px;     
+}
+.no-pad-top{
+  padding-top:20px;
+}
+.no-pad-top-list{
+  padding-top:5px;
+}
+.title-center{
+  text-align:center;
+}
 
-.black-text {
+.li-item {
+    display: list-item;
+    max-height:25px;
+    text-align:center;
+    text-align: -webkit-wrap-content;
+}
+.li-item-left{
+    isplay: list-item;
+    max-height:20px;
+    text-align: -webkit-wrap-content;
+    text-align:left;
+}
   
+.black-text-content {
+  font-size:0.60em;
+  padding:0;
+  margin-top:2px;
+  margin-bottom:2px;
   color: #000000 !important;
+}
+.black-text-content-title {
+  font-size:0.70em;
+  color:#89adca;
+  padding:0;
+  margin-top:2px;
+  margin-bottom:2px;
 }
 
 .white {
@@ -173,7 +208,8 @@ background-color: #000000 !important;
 }
 
 .card .card-content {
-  padding: 24px;
+  padding: 10px;
+  vertical-align: middle;
   border-radius: 0 0 2px 2px;
 }
 
@@ -269,8 +305,18 @@ background-color: #000000 !important;
   -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
           box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
-
-
+@media only screen and (min-width: 375px) {
+             .no-pad-top{
+                padding-top:5px;
+              }
+              .no-pad-row{
+                  padding-top:2px;     
+              }
+              .no-pad-top-list{
+                padding-top:0px;
+              }
+          }
+         
     `}</style>
 )
 export default ItemStyle;

@@ -4,6 +4,8 @@ const NavCss = () => (
         float:right;
       }
       .bg-dark {
+        background: url(static/images/bgtr.svg) top right no-repeat,url(static/images/bgbl.svg) bottom left no-repeat,url(static/images/overlay.png),linear-gradient(45deg,#384955,#655361,#85505f);
+}
         background-color: #343a40 !important;
       }
       .bg-white {
@@ -45,8 +47,9 @@ button{
     .search input {
         position: absolute;
         width:0px;
-        background-color :#343a40;
-        margin-left: 72px;
+        background-color :transparent;
+        border-style:none;
+        margin-left: 70px;
         -webkit-transition: all 0.7s ease-in-out;
         -moz-transition: all 0.7s ease-in-out;
         -o-transition: all 0.7s ease-in-out;
@@ -58,7 +61,7 @@ button{
     }
 
         .search:hover input, .search input:focus {
-            width: 300px;
+            width: 100%;
             background-color :white;
             margin-right: 0px;
             line-height: 18px;
@@ -67,7 +70,7 @@ button{
 
 .btn-search {
     background:url('static/images/search-ico.png') center center no-repeat;
-    background-color :#343a40;
+    linear-gradient:(45deg,#384955,#655361,#85505f);
     max-height:25px;
     position: absolute;
     left: 0;
@@ -84,11 +87,12 @@ button{
   
   .btn-search:hover{
      background:url('static/images/search-ico.png') center center no-repeat;
-     background-color:#27659d;
+     linear-gradient:(45deg,#384955,#655361,#85505f);
+     
 
   }
 
-.navbar {
+.navbar-custom {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,10 +105,10 @@ button{
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
-.navbar > .container-nav, {
+.navbar-custom > .container-nav, {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +122,7 @@ button{
   justify-content: space-between;
 }
 
-.navbar-brand {
+.navbar-custom-brand {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -128,11 +132,11 @@ button{
   white-space: nowrap;
 }
 
-.navbar-brand:hover, .navbar-brand:focus {
+.navbar-custom-brand:hover, .navbar-custom-brand:focus {
   text-decoration: none;
 }
 
-.navbar-nav {
+.navbar-custom-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,45 +149,45 @@ button{
   list-style: none;
 }
 
-.navbar-nav .nav-link {
+.navbar-custom-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
 }
 
-.navbar-nav .dropdown-menu {
+.navbar-custom-nav .dropdown-menu {
   position: static;
   float: none;
 }
 
-.navbar-text {
+.navbar-custom-text {
   display: inline-block;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.navbar-dark .navbar-brand {
+.navbar-custom-dark .navbar-custom-brand {
   color: #fff;
 }
 
-.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+.navbar-custom-dark .navbar-custom-brand:hover, .navbar-custom-dark .navbar-custom-brand:focus {
   color: #fff;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.navbar-custom-dark .navbar-custom-nav .nav-link {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+.navbar-custom-dark .navbar-custom-nav .nav-link:hover, .navbar-custom-dark .navbar-custom-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.navbar-dark .navbar-nav .nav-link.disabled {
+.navbar-custom-dark .navbar-custom-nav .nav-link.disabled {
   color: rgba(255, 255, 255, 0.25);
 }
 
-.navbar-dark .navbar-nav .show > .nav-link,
-.navbar-dark .navbar-nav .active > .nav-link,
-.navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav .nav-link.active {
+.navbar-custom-dark .navbar-custom-nav .show > .nav-link,
+.navbar-custom-dark .navbar-custom-nav .active > .nav-link,
+.navbar-custom-dark .navbar-custom-nav .nav-link.show,
+.navbar-custom-dark .navbar-custom-nav .nav-link.active {
   color: #fff;
 }
 .form-control {
@@ -204,3 +208,5 @@ button{
     `}</style>
 )
 export default NavCss 
+
+
