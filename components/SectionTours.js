@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Nav from '../components/Nav.js'
 
 
-const ToursData =  [
+const ToursData = [
   {
     "adult": 45,
     "adultcomision": 20,
@@ -47,56 +47,16 @@ const ToursData =  [
     "touristcomision": 34,
     "touristneto": 79
   },
-  
-  {
-    "adult": 85,
-    "adultcomision": 20,
-    "adultneto": 25,
-    "child": 45,
-    "childcomision": 20,
-    "childneto": 25,
-    "company": "La pradera",
-    "description": ["Transporte ", "Guia", "Duracion: 2.5hrs", "Almuerzo", "Aventura extrema "],
-    "id": 89,
-    "title": "ATV Arenal Tour",
-    "tourist": 113,
-    "url": "https://media-cdn.tripadvisor.com/media/photo-s/01/71/9d/a3/muy-bueno.jpg",
-    "touristchild": 113,
-    "touristchildcomision": 34,
-    "touristchildneto": 79,
-    "touristcomision": 34,
-    "touristneto": 79
-  },
 
   {
-  "adult": 45,
+    "adult": 60,
     "adultcomision": 20,
     "adultneto": 25,
     "child": 45,
     "childcomision": 20,
     "childneto": 25,
     "company": "Baldi",
-    "description": ["HotSprigs ", "Almuerzo Buffet", "Duracion: 10am-10pm"],
-    "id": 89,
-    "title": "Baldi #1",
-    "tourist": 113,
-    "url": "http://www.colypro.com/ee_uploads/centros_recreo/BaldiWeb36.jpg",
-    "touristchild": 113,
-    "touristchildcomision": 34,
-    "touristchildneto": 79,
-    "touristcomision": 34,
-    "touristneto": 79
-  },
-
-  {
-  "adult": 60,
-    "adultcomision": 20,
-    "adultneto": 25,
-    "child": 45,
-    "childcomision": 20,
-    "childneto": 25,
-    "company": "Baldi",
-    "description": ["Rio Balsa ", "Almuerzo ","Snack (frutas)", "Salida: 9am"],
+    "description": ["Rio Balsa ", "Almuerzo ", "Snack (frutas)", "Salida: 9am"],
     "id": 89,
     "title": " Rafting 2 y 3",
     "tourist": 113,
@@ -116,7 +76,26 @@ const ToursData =  [
     "childcomision": 20,
     "childneto": 25,
     "company": "Go Adventures",
-    "description": ["9 cables canopy", "Rápel","Malekus", "Termales"],
+    "description": ["Tubing","Malekus", "Termales"],
+    "id": 89,
+    "title": "Paquete Aventura 2",
+    "tourist": 113,
+    "url": "https://i.ytimg.com/vi/R52_G-nhRyU/maxresdefault.jpg",
+    "touristchild": 113,
+    "touristchildcomision": 34,
+    "touristchildneto": 79,
+    "touristcomision": 34,
+    "touristneto": 79
+  },
+  {
+    "adult": 50,
+    "adultcomision": 20,
+    "adultneto": 25,
+    "child": 45,
+    "childcomision": 20,
+    "childneto": 25,
+    "company": "Go Adventures",
+    "description": ["9 cables canopy", "Rápel", "Malekus", "Termales"],
     "id": 89,
     "title": "Paquete Aventura",
     "tourist": 113,
@@ -127,7 +106,10 @@ const ToursData =  [
     "touristcomision": 34,
     "touristneto": 79
   }
+  ,
   
+
+
 ]
 const ToursInfo = () => (
 
@@ -142,39 +124,56 @@ const ToursInfo = () => (
     </header>
     <div className="content dark style2">
       <div className="container">
-        <div className="u12 u12-narrow">
-          <div className="row">
-            {
-              ToursData.map(tour => {
-                return (
-                  <div className="u4 u12-mobile">
-                    <div className="video-responsive  ">
-                      <div className="card small">
-                        <CardImg url={tour.url} title={tour.title} />
-                        <div className="card-action">
-                          <a href="#">Ver Mas</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })
-            }
+        <div className="row">
+          <div className="u8 u12-narrow">
             <div className="row">
-              <footer>
-                <Link href="/tours">
-                  <a href="#second" className="button scrolly">Nuestros Tours &amp; Descuentos</a>
-                </Link>
-              </footer>
+              {
+                ToursData.map(tour => {
+                  return (
+                    <div className="u4">
+                    <a href="#" className="image fit">
+                   
+                        <div className="image fit">
+                          <img src={tour.url} />
+                          <span className="p-absolute">{tour.title}</span>
+                        </div>
+      
+                    </a>
+                    </div>
 
+                  )
+                })
+              }
             </div>
 
+          </div>
+          <div className="u4 u12-narrow">
+            <section>
+              <h3>Aventura, Confort, Naturaleza y mucho más..</h3>
+              <p>
+                Contamos con gran variedad de paquetes turisticos y actividades a disposicion de nuestros usuarios y clientes,
+                  a un precio accesible y con execelente servicio.<br />
+                
+                Para mas informacion acerca de los toures visita nuestra seccion de catalogo en linea
+                  </p>
+                <Link href="/tours">
+        <a class="button">
+          Ver más
+        </a>
+      </Link>
+
+            </section>
 
           </div>
-
         </div>
+
       </div>
+      <footer>
+      
+       </footer>
     </div>
+
+
   </section>
 
 )

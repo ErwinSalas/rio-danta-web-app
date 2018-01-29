@@ -22,10 +22,10 @@ class Tabs extends Component {
                 <nav className="nav-extended">
                     <div className="nav-content">
                         <ul className="tabs ">
-                            <li className="tab"><a href="">Termales</a></li>
-                            <li className="tab "><a href="">Rafting</a></li>
-                            <li className="tab"><a href="">Aventura</a></li>
-                            <li className="tab"><a href="">Paquetes</a></li>
+                            <li className="tab z-depth-5"><a href="">Termales</a></li>
+                            <li className="tab z-depth-5"><a href="">Rafting</a></li>
+                            <li className="tab z-depth-5"><a href="">Aventura</a></li>
+                            <li className="tab z-depth-5"><a href="">Paquetes</a></li>
 
                         </ul>
                     </div>

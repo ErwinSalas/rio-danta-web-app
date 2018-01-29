@@ -132,11 +132,7 @@ export default () => (
       </div>
     </section>
     {/* Scripts */}
-    <script src="/static/jquery.min.js"></script>
-			<script src="/static/jquery.scrolly.min.js"></script>
-			<script src="/static/skel.min.js"></script>
-      <script src="/static/util.js"></script>
-      <script src="/static/main.js"></script>
+    
 </div>
     
 )

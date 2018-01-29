@@ -202,8 +202,9 @@ background-color: #000000 !important;
 }
 .p-absolute{
   position: absolute;
-  top: 0;
-  left: 0;
+  z-index:2000;
+  top: 5px;
+  right:5px;
 
 }
 
