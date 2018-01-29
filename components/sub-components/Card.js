@@ -11,7 +11,7 @@ const Card = (props) => (
         <div className="row no-pad-row">
           <div className="u5 u12-mobile no-pad-top">
             <a className="black-text-content-title title-center">
-              Actividades & Caracteristicas
+              Actividades Servicios Caracteristicas
             </a>
           </div>
           <div className="u7 u12-mobile no-pad-top-list">
@@ -20,7 +20,7 @@ const Card = (props) => (
                 props.item.description.map((feature) => {
                   return (
                     <li className="li-item-left">
-                      {feature}
+                      * {feature}
                     </li>
                   )
                 })
