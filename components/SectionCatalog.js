@@ -250,7 +250,7 @@ const ToursData = [
     "id": 89,
     "title": "Rio Celeste",
     "tourist": 113,
-    "url": "https://i.ytimg.com/vi/U1hMe18CiQo/maxresdefault.jpg",
+    "url": "/static/images/celeste.jpg",
     "touristchild": 113,
     "touristchildcomision": 34,
     "touristchildneto": 79,
