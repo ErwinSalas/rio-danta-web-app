@@ -4,7 +4,7 @@ import MainCss from '../components/styles-jsx/main_css.js'
 import SectionTours from '../components/SectionTours.js'
 import Head from 'next/head'
 import Footer from "../components/sub-components/Footer.js"
-
+import Link from 'next/link';
   
 export default () => (
   <div >
@@ -27,7 +27,7 @@ export default () => (
     
     />
     <SectionOne/>
-    <SectionTours/>
+    
      {/* Third */}
     <section id="second" className="main">
     <header>
@@ -43,34 +43,36 @@ export default () => (
         <div className="row">
           <div className="u4 u12-narrow">
             <section>
-              <h3>Volcán Arenal</h3>
-              <p>Entre las maravillas que podemos encontrar en Costa Rica tenemos al Volcán Arenal es uno de los 10 más activos del mundo, 
-              el cual tiene 1670 metros de altura y un cono casi perfecto, es una maravilla de la naturaleza que podemos encontrar en la Fortuna de San Carlos, 
-              si deseas pasar sus vacaciones en un lugar lleno de tranquilidad y naturaleza te recomendamos visitarnos en nuestro Hostel Rio Danta, 
-              donde podrás pasar las mejores vacaciones de su vida en un lugar lleno de tranquilidad y naturaleza, 
-              donde podras encontrar los mejores tours a los precios más accesibles.</p>
+              <h3>Tours</h3>
+              <p>
+              Si deseas pasar sus vacaciones en un lugar lleno de tranquilidad y naturaleza te recomendamos visitarnos en nuestro Hostel Rio Danta, 
+              donde podrás pasar vacaciones en un lugar lleno de tranquilidad y naturaleza, 
+              donde podrás encontrar los mejores tours a los precios más accesibles, si reservas habitaciones + tour vas a recibir descuentos.</p>
               
             </section>
           </div>
           <div className="u8 u12-narrow">
             <div className="row">
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/perica.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/tabacon1.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/baldi.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/rafting.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/iguana.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/ecotermales.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/atv.jpg" alt /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/amaca.jpg" alt /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/canopy.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/tabacon1.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/baldi.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/flyboard.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/celeste.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/ecotermales.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/atv.jpg" height="150px" width="175px"/></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/rafting.jpg" height="150px" width="175px" /></a></div>
             </div>
           
           </div>
           
         </div>
-              <footer>
-                <a href="https://hotels.cloudbeds.com/reservation/Earuuo" className="button scrolly">Reservaciones</a>
-              </footer>
+          <Link href="/tours">
+             <a class="button">
+             Ver más
+            </a>
+          </Link>
+              
       </div>
     </div>
   </section>
@@ -84,6 +86,9 @@ export default () => (
           Si lo haces desde nuestra pagina podras aprovechar los mejores descuentos<br/>
           Cualquier consulta estamos para servirles.</p>
         </div>
+              <footer>
+                <a href="https://hotels.cloudbeds.com/reservation/Earuuo" className="button scrolly">Reservaciones</a>
+              </footer>
       </header>
       <div className="content style4 featured">
         <div className="container percent-75">
@@ -98,7 +103,7 @@ export default () => (
             <div className="row">
               <div className="u12">
                 <ul className="actions">
-                  <li><input type="submit" className="button" defaultValue="Enviar Mensaje" /></li>
+                  <li><input type="reset" className="button" defaultValue="Enviar Mensaje" /></li>
                   <li><input type="reset" className="button alt" defaultValue="Borrar Texto" /></li>
                 </ul>
               </div>

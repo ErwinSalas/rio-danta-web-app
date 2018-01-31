@@ -23,10 +23,10 @@ export default ()=>(
                   <header>
                     <h3>Habitaciones Superiores</h3>
                   </header>
-                  <p>Servicios: Desayuno incluido, Aire acondicionado, TV por cable, Internet inalambrico, Agua caliente, Parqueo con camaras de seguridad.</p>
+                  <p>Servicios: Desayuno incluido, Aire acondicionado, TV por cable, Internet inalámbrico, Agua caliente, Parqueo con camaras de seguridad.</p>
                   <footer>
                   <Link href="/HabitacionesS">
-                  <a href="#second" className="button scrolly">Ver Mas</a>
+                  <a href="#second" className="button scrolly">Ver Más</a>
                   </Link>
                   </footer>
                 </section>
@@ -37,10 +37,10 @@ export default ()=>(
                   <header>
                     <h3>Habitaciones Estandar</h3>
                   </header>
-                  <p>Servicios: Desayuno incluido, TV por cable, Internet inalambrico, Agua caliente, Parqueo con camaras de seguridad, Ventilador de pie.</p>
+                  <p>Servicios: Desayuno incluido, TV por cable, Internet inalámbrico, Agua caliente, Parqueo con camaras de seguridad, Ventilador de pie.</p>
                   <footer>
                 <Link href="/HabitacionesE">
-                                  <a href="#second" className="button scrolly">Ver Mas</a>
+                                  <a href="#second" className="button scrolly">Ver Más</a>
                                 </Link>                  </footer>
                 </section>
               </div>
@@ -50,10 +50,10 @@ export default ()=>(
                   <header>
                     <h3>Habitaciones Compartidas</h3>
                   </header>
-                  <p>Servicios: Desayuno incluido, TV por cable, Internet inalambrico, Agua caliente, Parqueo con camaras de seguridad, Ventilador de pie.</p>
+                  <p>Servicios: Desayuno incluido, TV por cable, Internet inalámbrico, Agua caliente, Parqueo con camaras de seguridad, Ventilador de pie.</p>
                   <footer>
                   <Link href="/HabitacionesC">
-                  <a href="" className="button scrolly">Ver Mas</a>
+                  <a href="" className="button scrolly">Ver Más</a>
                 </Link>
                   </footer>
                 </section>

@@ -66,7 +66,7 @@ export default () => (
             <div className="row">
               <div className="u12">
                 <ul className="actions">
-                  <li><input type="submit" className="button" defaultValue="Enviar Mensaje" /></li>
+                  <li><input type="reset" className="button" defaultValue="Enviar Mensaje" /></li>
                   <li><input type="reset" className="button alt" defaultValue="Borrar Texto" /></li>
                 </ul>
               </div>
