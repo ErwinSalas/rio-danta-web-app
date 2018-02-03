@@ -1,22 +1,83 @@
 import Link from 'next/link';
+import React, { Component } from 'react';
+
+class Chat extends Component {
+  constructor(props) {
+    super();
+    this.handleClick = this.chatClose.bind(this);
+    this.state = {
+      chat: false
+    };
+  }
+
+  componentWillMount() {
+
+  }
+ chatClose (){
+   console.log("chat state change")
+    if (this.state.chat == true) {
+      this.setState({
+        chat: false
+      })
+
+    }
+    else {
+      this.setState({
+        chat: true
+      })
+
+    }
+
+  }
 
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-      <div class="fixed-action-btn horizontal">
-      <iframe src="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true" height={300} width={300} />
-      <Link href="/">
-      <a class="btn-floating btn-large color-danton ">
+  render() {
+    let state=this.state.chat
+    let frame
+    if (state) {
+      frame=<iframe className ="fixed-chat"src="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true"
+        height={320} width={300} />
+    }
+    else{
+      frame=null
+    }
+
+    return (
+      <div >
+
+        <style jsx global>{`
+          .fixed-chat {
+            position: fixed;
+            right: 23px;
+            bottom: 53px;
+            padding-top: 15px;
+            margin-bottom: 0;
+            z-index: 997;
+            backgrownd: fff;
+          }
+        `}</style>
+
         
-        <i class="material-icons icon-sms">sms</i>
-      </a>
-      </Link>
-  
-    
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
-    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        {frame}
+        <div class="fixed-action-btn horizontal" >
+          
+          <a class="btn-floating btn-large color-chat " onClick={this.handleClick}
+          >
+
+       
+              
+            <i class="material-icons icon-sms" >sms</i>
+          </a>
+
+        </div>
+
+      </div>
+
+    );
+  }
+}
+
+export default Chat;
+
+

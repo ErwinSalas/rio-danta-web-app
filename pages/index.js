@@ -4,8 +4,9 @@ import MainCss from '../components/styles-jsx/main_css.js'
 import SectionTours from '../components/SectionTours.js'
 import Head from 'next/head'
 import Footer from "../components/sub-components/Footer.js"
+import Chat from "../components/sub-components/Chat.js"
 import Link from 'next/link';
-  
+
 export default () => (
   <div >
     <Head>
@@ -13,131 +14,114 @@ export default () => (
       <meta charSet='utf-8' />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="Aplicacion para reserva de habitaciones y tours en linea" />
-     
+
     </Head>
-    
-    
-    <MainCss/>
-    
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-      <div class="fixed-action-btn horizontal">
-      <iframe src="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true" height={300} width={300} />
-      <Link href="/">
-      <a class="btn-floating btn-large color-danton ">
-        
-        <i class="material-icons icon-sms">sms</i>
-      </a>
-      </Link>
-  
-    
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
-    
-    <Header 
+
+
+    <MainCss />
+
+    <Chat/>
+
+    <Header
       title="Hostel Río Danta "
       subtitle="Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible"
       btntitle="Habitaciones"
       classRef="#header"
-    
+
     />
-    <SectionOne/>
-    
-     {/* Third */}
+    <SectionOne />
+
+    {/* Third */}
     <section id="second" className="main">
-    <header>
-      <div className="container">
-        <h2>Naturaleza y Confort en un Mismo Lugar</h2>
-        <p>Bienvenidos a la Fortuna, donde podrás encontar diferentes tipos de actividades,<br />
-        para poder realizar para compartir con su familia de una manera diferente<br />
-        poder descansar en un lugar con las brisas de la naturaleza y con el relajante sonido de las aguas del rio .</p>
-      </div>
-    </header>
-    <div className="content dark style2">
-      <div className="container">
-        <div className="row">
-          <div className="u4 u12-narrow">
-            <section>
-              <h3>Tours</h3>
-              <p>
-              Si deseas pasar sus vacaciones en un lugar lleno de tranquilidad y naturaleza te recomendamos visitarnos en nuestro Hostel Rio Danta, 
-              donde podrás pasar vacaciones en un lugar lleno de tranquilidad y naturaleza, 
-              donde podrás encontrar los mejores tours a los precios más accesibles, si reservas habitaciones + tour vas a recibir descuentos.</p>
-              
-            </section>
-          </div>
-          <div className="u8 u12-narrow">
-            <div className="row">
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/canopy.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/tabacon1.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/baldi.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/flyboard.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/celeste.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/ecotermales.jpg" height="150px" width="135px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/atv.jpg" height="150px" width="135px"/></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/rafting.jpg" height="150px" width="135px" /></a></div>
-            </div>
-          
-          </div>
-          
+      <header>
+        <div className="container">
+          <h2>Naturaleza y Confort en un Mismo Lugar</h2>
+          <p>Bienvenidos a la Fortuna, donde podrás encontar diferentes tipos de actividades,<br />
+            para poder realizar para compartir con su familia de una manera diferente<br />
+            poder descansar en un lugar con las brisas de la naturaleza y con el relajante sonido de las aguas del rio .</p>
         </div>
-       
-        <Link href="/tours">
-             <a class="button">Ver Más</a>
-             
-            
+      </header>
+      <div className="content dark style2">
+        <div className="container">
+          <div className="row">
+            <div className="u4 u12-narrow">
+              <section>
+                <h3>Tours</h3>
+                <p>
+                  Si deseas pasar sus vacaciones en un lugar lleno de tranquilidad y naturaleza te recomendamos visitarnos en nuestro Hostel Rio Danta,
+              donde podrás pasar vacaciones en un lugar lleno de tranquilidad y naturaleza,
+              donde podrás encontrar los mejores tours a los precios más accesibles, si reservas habitaciones + tour vas a recibir descuentos.</p>
+
+              </section>
+            </div>
+            <div className="u8 u12-narrow">
+              <div className="row">
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/canopy.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/tabacon1.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/baldi.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/flyboard.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/celeste.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/ecotermales.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/atv.jpg" height="150px" width="135px" /></a></div>
+                <div className="u4"><a href="#" className="image fit"><img src="static/images/rafting.jpg" height="150px" width="135px" /></a></div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <Link href="/tours">
+            <a class="button">Ver Más</a>
+
+
           </Link>
-          
-    </div>    
-              
+
+        </div>
+
       </div>
-      
-  </section>
-    
+
+    </section>
+
     {/* Fourth */}
     <section id="fourth" className="main">
       <header>
         <div className="container">
           <h2>Contacto</h2>
-          <p>Escribenos para obtener los mejores precios y reservar los mejores tours<br/> 
-          Si lo haces desde nuestra pagina podras aprovechar los mejores descuentos<br/>
-          Cualquier consulta estamos para servirles.</p>
+          <p>Escribenos para obtener los mejores precios y reservar los mejores tours<br />
+            Si lo haces desde nuestra pagina podras aprovechar los mejores descuentos<br />
+            Cualquier consulta estamos para servirles.</p>
         </div>
-              <footer>
-                <a href="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true" className="button scrolly">Chat Online</a>
-              </footer>
-              
+        <footer>
+          <a href="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true" className="button scrolly">Chat Online</a>
+        </footer>
+
       </header>
       <div className="content style4 featured">
         <div className="container percent-75">
-          
-            
-            
-            
-                <footer>
-                <a href="https://hotels.cloudbeds.com/reservation/Earuuo" className="button scrolly">Reservaciones</a>
-              </footer>  
-                 
-              
-             
+
+
+
+
+          <footer>
+            <a href="https://hotels.cloudbeds.com/reservation/Earuuo" className="button scrolly">Reservaciones</a>
+          </footer>
+
+
+
         </div>
       </div>
     </section>
     {/* Footer */}
-  
 
-    <Footer/>
+
+    <Footer />
     {/* Scripts */}
     <script src="/static/jquery.min.js"></script>
-			<script src="/static/jquery.scrolly.min.js"></script>
-			<script src="/static/skel.min.js"></script>
-      <script src="/static/util.js"></script>
-      <script src="/static/main.js"></script>
-</div>
-    
+    <script src="/static/jquery.scrolly.min.js"></script>
+    <script src="/static/skel.min.js"></script>
+    <script src="/static/util.js"></script>
+    <script src="/static/main.js"></script>
+  </div>
+
 )

@@ -212,6 +212,9 @@ export default () => (
 .color-accent{
 	background-color:  #145995;
 }
+.color-chat{
+	background-color:#2a1a01
+}
 .color-danton{
 	background-color:#382b33;
 }
