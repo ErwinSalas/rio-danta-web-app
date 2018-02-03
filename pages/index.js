@@ -53,28 +53,31 @@ export default () => (
           </div>
           <div className="u8 u12-narrow">
             <div className="row">
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/canopy.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/tabacon1.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/baldi.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/flyboard.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/celeste.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/ecotermales.jpg" height="150px" width="175px" /></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/atv.jpg" height="150px" width="175px"/></a></div>
-              <div className="u4"><a href="#" className="image fit"><img src="static/images/rafting.jpg" height="150px" width="175px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/canopy.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/tabacon1.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/ranacristal.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/baldi.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/flyboard.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/celeste.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/ecotermales.jpg" height="150px" width="135px" /></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/atv.jpg" height="150px" width="135px"/></a></div>
+              <div className="u4"><a href="#" className="image fit"><img src="static/images/rafting.jpg" height="150px" width="135px" /></a></div>
             </div>
           
           </div>
           
         </div>
-          <Link href="/tours">
-             <a class="button">
-             Ver más
-            </a>
+       
+        <Link href="/tours">
+             <a class="button">Ver Más</a>
+             
+            
           </Link>
+          
+    </div>    
               
       </div>
-    </div>
+      
   </section>
     
     {/* Fourth */}
