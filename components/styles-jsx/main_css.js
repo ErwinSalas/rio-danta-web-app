@@ -284,11 +284,17 @@ export default () => (
   display: inline-block;
   margin: 15px 15px 0 0;
 }
+.icon-sms{
+	margin: 16px;
+	
+}
+
 .material-icons {
   text-rendering: optimizeLegibility;
   -webkit-font-feature-settings: 'liga';
      -moz-font-feature-settings: 'liga';
-          font-feature-settings: 'liga';
+		  font-feature-settings: 'liga';
+		  
 }
 i.large {
 	padding:3px;

@@ -19,9 +19,23 @@ export default () => (
     
     <MainCss/>
     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <div class="fixed-action-btn horizontal">
+      <iframe src="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true" height={320} width={300} />
+      <Link href="/">
+      <a class="btn-floating btn-large color-danton ">
+        
+        <i class="material-icons icon-sms">sms</i>
+      </a>
+      </Link>
+  
+  </div>
+    
     <Header 
       title="Hostel Río Danta "
-      subtitle="Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible"
+      su
+      
+      btitle="Hospedaje y Tours En El Mismo Lugar A Un Precio Accesible"
       btntitle="Habitaciones"
       classRef="#header"
     
@@ -90,28 +104,22 @@ export default () => (
           Cualquier consulta estamos para servirles.</p>
         </div>
               <footer>
-                <a href="https://hotels.cloudbeds.com/reservation/Earuuo" className="button scrolly">Reservaciones</a>
+                <a href="https://tawk.to/chat/5a754fbf4b401e45400ca2e8/default/?$_tawk_popout=true" className="button scrolly">Chat Online</a>
               </footer>
+              
       </header>
       <div className="content style4 featured">
         <div className="container percent-75">
-          <form method="post" action="#">
-            <div className="row percent-50">
-              <div className="u6 u12-mobile"><input type="text" placeholder="Nombre" /></div>
-              <div className="u6 u12-mobile"><input type="text" placeholder="Correo" /></div>
-            </div>
-            <div className="row percent-50">
-              <div className="u12"><textarea name="message" placeholder="Mensaje" defaultValue={""} /></div>
-            </div>
-            <div className="row">
-              <div className="u12">
-                <ul className="actions">
-                  <li><input type="reset" className="button" defaultValue="Enviar Mensaje" /></li>
-                  <li><input type="reset" className="button alt" defaultValue="Borrar Texto" /></li>
-                </ul>
-              </div>
-            </div>
-          </form>
+          
+            
+            
+            
+                <footer>
+                <a href="https://hotels.cloudbeds.com/reservation/Earuuo" className="button scrolly">Reservaciones</a>
+              </footer>  
+                 
+              
+             
         </div>
       </div>
     </section>
